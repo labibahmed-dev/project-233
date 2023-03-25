@@ -1,0 +1,358 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+
+
+}
+
+.main {
+    background-image: url(http://www.beautytipshub.com/wp-content/uploads/2020/05/mens-jeans-banner.jpeg);
+    padding: 300px;
+    background-repeat: no-repeat;
+    background-position: -1px;
+    background-size: cover;
+    display: flex;
+}
+
+.heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    animation-name: heading;
+    color: #090808;
+
+}
+
+@media only screen and (max-width: 992px) {
+    .heading {
+        font-size: 20px;
+        margin-left: -150px;
+        margin-top: -30px;
+        width: 150px;
+    }
+
+
+}
+@media only screen and (max-width: 576px) {
+
+
+     .button{
+        margin-top: 100px !important;
+    } 
+
+}
+
+ .button {
+   
+margin-top: 50px;
+margin-left: -100px;
+
+
+
+
+    text-decoration:none; 
+    text-align:center; 
+    padding:11px 32px; 
+    border:solid 1px #004F72; 
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px; 
+    border-radius: 4px; 
+    font:23px "Courier New", Courier, monospace; 
+    font-weight:bold; 
+    color:#E5FFFF; 
+   background-color: #cf0f0f;
+    text-shadow: 0px 0px 1px #cf0f0f; 
+    filter: dropshadow(color=#cf0f0f, offx=0, offy=0); }
+
+
+
+
+.BUY a {
+    text-decoration: none;
+    color: #ffffff; */
+}
+
+ .BUY :hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    border: rgb(87, 20, 20); 
+
+}
+
+.about img {
+    width: 30%;
+    /*image width*/
+    float: left;
+    /*image position*/
+    height: 200x;
+    border: 1px solid white;
+}
+
+.about p {
+    color: aliceblue;
+    font-size: larger;
+    font-family: cursive;
+}
+
+.about h1 {
+    font-family: monospace;
+    font-size: 60px;
+    color: beige;
+}
+
+.about {
+    padding: 200px;
+    background-color: rgb(87, 20, 20);
+    animation-delay: 5s;
+}
+
+.shop {
+
+    padding: 200px;
+    background-color: black;
+    color: azure;
+    text-align: left;
+}
+
+.shops img {
+    width: 20%;
+    border: 3px solid black;
+    border-radius: 50px;
+    display: flex;
+
+}
+
+
+
+header {
+
+    text-align: center;
+    position: fixed;
+    width: 100%;
+
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: rgb(153, 20, 20);
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+
+
+
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    transform-origin: top;
+    transform: scale(1, 0);
+    transition: .5s ease-in-out;
+    background-color: rgb(0, 0, 0);
+    opacity: .7;
+
+
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+
+}
+
+nav a {
+    font-family: cursive;
+    color: rgb(153, 20, 20);
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-left: 1em;
+    transition: 90ms ease-in-out;
+}
+
+nav a:hover {
+    color: rgb(245, 250, 253);
+
+}
+
+.nav-toggle:checked~nav {
+    transform: scale(1, 1);
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: rgb(153, 20, 20);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav-toggle:checked~nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+
+}
+
+@media (min-width: 750px) and (max-width: 1800px) {
+    .nav-toggle-label {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 1fr) 1fr;
+    }
+
+    nav a {
+        transition: 2s ease-in;
+        ;
+    }
+
+    nav {
+        all: unset;
+        grid-column: 7;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 3em;
+    }
+
+    nav li {
+        list-style: none;
+        ;
+
+    }
+
+    .parent {
+        display: flex;
+    }
+
+
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+ 
+  @media only screen and (max-width: 768px) {
+    .col {
+      flex-basis: 50%;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .col {
+      flex-basis: 100%;
+    }
+  }
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+    background-color:  #090808;
+    color: wheat;
+    
+}
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1;  }
+
+.span_1_of_3 { width: 32.26%; }
+
+
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_3 { width: 100%; }
+    .span_1_of_2 { width: 100%; }
+}
+
+.product-image{
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.span_1_of_2 {
+	width: 49.2%;
+}
+
+.about-us-wrapper{
+    background-color: #090808 ;
+}
+.HELLO{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color:   #090808;
+    color: white;
+}
+
+
