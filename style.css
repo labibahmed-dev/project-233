@@ -72,13 +72,7 @@ margin-left: -100px;
 
 }
 
- .button :hover {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    background-color: rgb(255, 255, 255);
-    border: rgb(87, 20, 20); 
 
-}
 
 .about img {
     width: 30%;
